@@ -14,6 +14,8 @@ send our signal to our home Trinket that will activate this program running on o
 
 *Note we could simplify our setup with a bigger micro controller that would combine irbreak.ino and transmitter.ino two trinkets into 1 but I could not figure out away to send message without using all available trinket pins*
 
+Part 1 - https://youtu.be/JmLufwKJ6Tg (demo of the setup working with bread boards)
+
 # IR break beam sensor - trinket m0 
 see: irbreak.ino
 ![alt text](https://github.com/taf2/alert-sensor/blob/master/images/ir-break-beam.jpg?raw=true)
