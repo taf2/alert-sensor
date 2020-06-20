@@ -70,6 +70,14 @@ BAT
 # chim player - raspberry pi
 
 see play.c
+see: https://lauri.xn--vsandi-pxa.com/2013/12/implementing-mp3-player.en.html
+be sure to install audio libraries
+```
+sudo apt install libmad0-dev libpulse-dev pulseaudio
+# and run the pulseaudio daemon
+pulseaudio -D
+```
+*Note doorbell.mp3 is located in the checkout directory which in my case is /home/pi/alert-sensor/doorbell.mp3 anywhere else and you will need to modify play.c*
 
 PIN 36 - held HIGH unless we need to play music chim
 PIN 34 - GND for led indicator
