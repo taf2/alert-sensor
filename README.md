@@ -25,7 +25,7 @@ GND   - common ground connected to break beam sensor and power source (very impo
 BAT   - connected to postive battery
 
 # Wiring nRF24L01 to trinkets
-![alt text](https://github.com/taf2/alert-gate/blob/master/Pinout-nRF24L01-PA-LNA-External-Antenna-Wireless-Transceiver-Module.png?raw=true)
+![alt text](https://github.com/taf2/alert-sensor/blob/master/Pinout-nRF24L01-PA-LNA-External-Antenna-Wireless-Transceiver-Module.png?raw=true)
 
 ```
 [YELLOW] - CE (Chip Enable) is an active-HIGH pin. When selected the nRF24L01 will either transmit or receive, depending upon which mode it is currently in.
