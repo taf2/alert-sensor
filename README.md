@@ -16,6 +16,7 @@ send our signal to our home Trinket that will activate this program running on o
 
 # IR break beam sensor - trinket m0 
 see: irbreak.ino
+![alt text](https://github.com/taf2/alert-sensor/blob/master/images/ir-break-beam.jpg?raw=true)
 
 Job is to enable power to trinket transmitter when pin 4 is low
 
@@ -25,7 +26,7 @@ GND   - common ground connected to break beam sensor and power source (very impo
 BAT   - connected to postive battery
 
 # Wiring nRF24L01 to trinkets
-![alt text](https://github.com/taf2/alert-sensor/blob/master/Pinout-nRF24L01-PA-LNA-External-Antenna-Wireless-Transceiver-Module.png?raw=true)
+![alt text](https://github.com/taf2/alert-sensor/blob/master/images/Pinout-nRF24L01-PA-LNA-External-Antenna-Wireless-Transceiver-Module.png?raw=true)
 
 ```
 [YELLOW] - CE (Chip Enable) is an active-HIGH pin. When selected the nRF24L01 will either transmit or receive, depending upon which mode it is currently in.
@@ -39,6 +40,7 @@ BAT   - connected to postive battery
 # transmitter - trinket m0 nRF24L01
 
 see: transmitter.ino
+![alt text](https://github.com/taf2/alert-sensor/blob/master/images/transmitter.jpg?raw=true)
 
 Job is to send a message when power is on.  For usage of nrf24l01 see https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/
 
@@ -54,6 +56,7 @@ BAT
 *Note, i did not need to attach the grey wire in both transmitter or receiver.   On the receiver we seem to be able to get away with not attaching the yellow wire - this frees up one pin for signaling our pi*
 
 see: receiver.ino
+![alt text](https://github.com/taf2/alert-sensor/blob/master/images/receiver.jpg?raw=true)
 
 PIN 0 - signal wire (not the yellow wire pin held high and goes low when we received a signal)
 PIN 1 - orange wire
