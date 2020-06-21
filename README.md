@@ -1,14 +1,14 @@
 # Get a chim when someone enters the driveway
 
-Using a combination of Trinket M0, a IR light break sensor, nrf24l01 radios and a raspberry PI
+Using a combination of Trinket M0, a IR light break sensor, nrf24l01 radios and a raspberry PI to receive a ding dong when someone walks or drives into the drive way
 
 
-We will play music when someone breaks the light beam which should indicate they have entered the driveway
+We will play music when someone or something breaks the light beam which should indicate they have entered the driveway
 
 
 Because we're using Trinket M0 outside in the driveway and it has limited pins to transmit and also respond to a 
-light break sensor GPIO pin we need two Trinket M0.   We also have batteries so we'll be using verters from adafruit.
-IMO these are nice becasue they both boost and buck voltage while not being as good of a boost they serve both use cases
+light break sensor GPIO pin we need two Trinket M0's.   We also have batteries so we'll be using verters from adafruit.
+IMO these are nice beause they both boost and buck voltage while not being as good of a boost they serve both use cases
 well so we'll be able to use a feature of the buck/boost converter to power on/off another Trinket M0 that will when activated
 send our signal to our home Trinket that will activate this program running on our raspberry PI 3 B+ to play some music chims
 
@@ -87,3 +87,16 @@ PIN 32 - held LOW unless we need to blink the led because of a break in our sens
 
 
 Attaching the raspberry pi to a speaker and play an mp3
+
+# case fitting
+For the remote IR sensor and transmitter I'm using a PVC Conduit  L connector.   I [3d printed an antenna cap](parts/antenna-fitting.stl) to plug one of the 
+holes for the antenna to sit securely.   On the other open hole I [3d printed another block](parts/ir-sensor-mount.stl) with a cut away for the IR sensor.
+I drilled a small 3/4 in hole into the side of the PVC to run a power wire and secured it with a little bit of extra shrink wrap.
+
+See: https://www.homedepot.com/p/Carlon-1-2-in-Schedule-40-and-80-PVC-Type-LB-Conduit-Body-Case-of-20-E986D-CTN/202205910
+
+# power setup
+
+To power the remote setup I don't have good power from my driveway nor do I want to dig it up to run power lines. So solar is a 
+nice option and hopefully will allow this project to run for a very long time without having to replace batteries.  To do this
+I use adafruit lipo charger learn more here: https://learn.adafruit.com/usb-dc-and-solar-lipoly-charger/using-the-charger
